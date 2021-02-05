@@ -1,0 +1,4 @@
+UPDATE cyb_9_options SET option_value = replace(option_value, 'https://uatmultisite.cyberior.com/', 'http://52.203.68.37/') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE cyb_9_posts SET guid = replace(guid, 'https://uatmultisite.cyberior.com/','http://52.203.68.37/');
+UPDATE cyb_9_posts SET post_content = replace(post_content, 'https://uatmultisite.cyberior.com/', 'http://52.203.68.37/');
+UPDATE cyb_9_postmeta SET meta_value = replace(meta_value,'https://uatmultisite.cyberior.com/','http://52.203.68.37/');
